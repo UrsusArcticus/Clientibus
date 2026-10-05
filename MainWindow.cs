@@ -5,6 +5,7 @@ namespace Clientibus
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
