@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clientibus {
-    public partial class CustomerControl : UserControl {
-        public CustomerControl() {
+    public partial class CustomerDataControl : UserControl {
+        public CustomerDataControl() {
             InitializeComponent();
         }
     }
