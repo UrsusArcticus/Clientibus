@@ -27,21 +27,21 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            tabControl1 = new TabControl();
+            mainTabControl = new TabControl();
             customersTabPage = new TabPage();
             newCustomerBtn = new Button();
-            tabControl1.SuspendLayout();
+            mainTabControl.SuspendLayout();
             SuspendLayout();
             // 
-            // tabControl1
+            // mainTabControl
             // 
-            tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tabControl1.Controls.Add(customersTabPage);
-            tabControl1.Location = new Point(12, 64);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1141, 695);
-            tabControl1.TabIndex = 0;
+            mainTabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            mainTabControl.Controls.Add(customersTabPage);
+            mainTabControl.Location = new Point(12, 64);
+            mainTabControl.Name = "mainTabControl";
+            mainTabControl.SelectedIndex = 0;
+            mainTabControl.Size = new Size(1141, 695);
+            mainTabControl.TabIndex = 0;
             // 
             // customersTabPage
             // 
@@ -61,6 +61,7 @@
             newCustomerBtn.TabIndex = 1;
             newCustomerBtn.Text = "New Customer";
             newCustomerBtn.UseVisualStyleBackColor = true;
+            newCustomerBtn.Click += newCustomerBtn_Click;
             // 
             // MainWindow
             // 
@@ -68,16 +69,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1165, 771);
             Controls.Add(newCustomerBtn);
-            Controls.Add(tabControl1);
+            Controls.Add(mainTabControl);
             Name = "MainWindow";
             Text = "Clientibus";
-            tabControl1.ResumeLayout(false);
+            mainTabControl.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private TabControl tabControl1;
+        private TabControl mainTabControl;
         private TabPage customersTabPage;
         private Button newCustomerBtn;
     }

@@ -1,5 +1,5 @@
 ﻿namespace Clientibus {
-    partial class CustomerDataControl {
+    partial class CustomerControl {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -23,30 +23,31 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            textBox1 = new TextBox();
+            textBoxFirstName = new TextBox();
             label1 = new Label();
-            textBox2 = new TextBox();
+            textBoxLastName = new TextBox();
             labelLastName = new Label();
             textBoxEmail = new TextBox();
-            textBox3 = new TextBox();
+            textBoxPhone = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            textBox4 = new TextBox();
+            textBoxAddress = new TextBox();
             labelAddress = new Label();
-            textBox5 = new TextBox();
+            textBoxCity = new TextBox();
             labelCity = new Label();
             labelZip = new Label();
-            textBox6 = new TextBox();
+            textBoxZip = new TextBox();
             checkBoxActive = new CheckBox();
-            richTextBox1 = new RichTextBox();
+            richTextBoxDescription = new RichTextBox();
+            btnSave = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textBoxFirstName
             // 
-            textBox1.Location = new Point(161, 18);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(382, 31);
-            textBox1.TabIndex = 0;
+            textBoxFirstName.Location = new Point(161, 18);
+            textBoxFirstName.Name = "textBoxFirstName";
+            textBoxFirstName.Size = new Size(382, 31);
+            textBoxFirstName.TabIndex = 0;
             // 
             // label1
             // 
@@ -57,12 +58,12 @@
             label1.TabIndex = 1;
             label1.Text = "First Name";
             // 
-            // textBox2
+            // textBoxLastName
             // 
-            textBox2.Location = new Point(161, 77);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(382, 31);
-            textBox2.TabIndex = 2;
+            textBoxLastName.Location = new Point(161, 77);
+            textBoxLastName.Name = "textBoxLastName";
+            textBoxLastName.Size = new Size(382, 31);
+            textBoxLastName.TabIndex = 2;
             // 
             // labelLastName
             // 
@@ -80,12 +81,12 @@
             textBoxEmail.Size = new Size(382, 31);
             textBoxEmail.TabIndex = 4;
             // 
-            // textBox3
+            // textBoxPhone
             // 
-            textBox3.Location = new Point(161, 198);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(382, 31);
-            textBox3.TabIndex = 5;
+            textBoxPhone.Location = new Point(161, 198);
+            textBoxPhone.Name = "textBoxPhone";
+            textBoxPhone.Size = new Size(382, 31);
+            textBoxPhone.TabIndex = 5;
             // 
             // label2
             // 
@@ -105,12 +106,12 @@
             label3.TabIndex = 7;
             label3.Text = "Telephone";
             // 
-            // textBox4
+            // textBoxAddress
             // 
-            textBox4.Location = new Point(161, 261);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(382, 31);
-            textBox4.TabIndex = 8;
+            textBoxAddress.Location = new Point(161, 261);
+            textBoxAddress.Name = "textBoxAddress";
+            textBoxAddress.Size = new Size(382, 31);
+            textBoxAddress.TabIndex = 8;
             // 
             // labelAddress
             // 
@@ -121,12 +122,12 @@
             labelAddress.TabIndex = 9;
             labelAddress.Text = "Address";
             // 
-            // textBox5
+            // textBoxCity
             // 
-            textBox5.Location = new Point(161, 332);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(233, 31);
-            textBox5.TabIndex = 10;
+            textBoxCity.Location = new Point(161, 332);
+            textBoxCity.Name = "textBoxCity";
+            textBoxCity.Size = new Size(233, 31);
+            textBoxCity.TabIndex = 10;
             // 
             // labelCity
             // 
@@ -146,12 +147,12 @@
             labelZip.TabIndex = 12;
             labelZip.Text = "Zip";
             // 
-            // textBox6
+            // textBoxZip
             // 
-            textBox6.Location = new Point(443, 329);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 31);
-            textBox6.TabIndex = 13;
+            textBoxZip.Location = new Point(443, 329);
+            textBoxZip.Name = "textBoxZip";
+            textBoxZip.Size = new Size(100, 31);
+            textBoxZip.TabIndex = 13;
             // 
             // checkBoxActive
             // 
@@ -165,57 +166,69 @@
             checkBoxActive.Text = "Is active";
             checkBoxActive.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // richTextBoxDescription
             // 
-            richTextBox1.Location = new Point(161, 458);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(382, 260);
-            richTextBox1.TabIndex = 15;
-            richTextBox1.Text = "";
+            richTextBoxDescription.Location = new Point(161, 458);
+            richTextBoxDescription.Name = "richTextBoxDescription";
+            richTextBoxDescription.Size = new Size(382, 260);
+            richTextBoxDescription.TabIndex = 15;
+            richTextBoxDescription.Text = "";
+            // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(1294, 899);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(112, 34);
+            btnSave.TabIndex = 16;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += this.btnSave_Click;
             // 
             // CustomerControl
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(richTextBox1);
+            Controls.Add(btnSave);
+            Controls.Add(richTextBoxDescription);
             Controls.Add(checkBoxActive);
-            Controls.Add(textBox6);
+            Controls.Add(textBoxZip);
             Controls.Add(labelZip);
             Controls.Add(labelCity);
-            Controls.Add(textBox5);
+            Controls.Add(textBoxCity);
             Controls.Add(labelAddress);
-            Controls.Add(textBox4);
+            Controls.Add(textBoxAddress);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(textBox3);
+            Controls.Add(textBoxPhone);
             Controls.Add(textBoxEmail);
             Controls.Add(labelLastName);
-            Controls.Add(textBox2);
+            Controls.Add(textBoxLastName);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxFirstName);
             Name = "CustomerControl";
-            Size = new Size(624, 808);
+            Size = new Size(1426, 952);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textBoxFirstName;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox textBoxLastName;
         private Label labelLastName;
         private TextBox textBoxEmail;
-        private TextBox textBox3;
+        private TextBox textBoxPhone;
         private Label label2;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox textBoxAddress;
         private Label labelAddress;
-        private TextBox textBox5;
+        private TextBox textBoxCity;
         private Label labelCity;
         private Label labelZip;
-        private TextBox textBox6;
+        private TextBox textBoxZip;
         private CheckBox checkBoxActive;
-        private RichTextBox richTextBox1;
+        private RichTextBox richTextBoxDescription;
+        private Button btnSave;
     }
 }
