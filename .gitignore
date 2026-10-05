@@ -1,0 +1,54 @@
+# .gitignore for .NET 8 projects created in Visual Studio 2022
+# Keeps build outputs, user-specific files, IDE state and package artifacts out of source control.
+
+## Build artifacts
+[Bb]in/
+[Oo]bj/
+artifacts/
+publish/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+## Visual Studio Code
+.vscode/
+
+## NuGet / packages
+packages/
+*.nupkg
+*.snupkg
+.nuget/
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Logs, temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+
+## Sensitive / machine-specific
+*.pfx
+*.key
+*.p12
+
+## Publish / deployment
+*.Publish.xml
+appsettings.*.json     # ignore environment-specific appsettings if you store secrets locally
+
+# Rider / VS caches
+.idea/
